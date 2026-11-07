@@ -4,38 +4,41 @@
     <meta charset="utf-8">
     <link rel="icon" type="image/svg+xml" href="/site-alexinfantini/favicon.svg">
     <link rel="icon" href="/site-alexinfantini/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anta&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="generator" content="Astro v7.4.5">
     <meta name="description" content="I miei progetti personali e professionali">
-    <title>Progetti | Il Mio Sito</title>
-  <link rel="stylesheet" href="/site-alexinfantini/assets/Layout.CH86wRVT.css">
-<link rel="stylesheet" href="/site-alexinfantini/assets/index.D335iIF1.css"></head>
+    <title>Progetti | alexinfantini.it</title>
+  <link rel="stylesheet" href="/site-alexinfantini/assets/Layout.Bj-AOCro.css">
+<link rel="stylesheet" href="/site-alexinfantini/assets/index.B5Fr9gx_.css"></head>
   <body>
     <header class="header" data-astro-cid-nen7h5rs>
   <div class="header__inner container" data-astro-cid-nen7h5rs>
-    <a class="header__logo" href="/site-alexinfantini/" data-astro-cid-nen7h5rs>Il Mio Sito</a>
+    <a class="header__logo" href="/site-alexinfantini/" data-astro-cid-nen7h5rs>
+      <img src="/site-alexinfantini/images/logo.svg" alt="logo" data-astro-cid-nen7h5rs>
+    </a>
 
-    <nav class="header__nav" aria-label="Navigazione principale" data-astro-cid-nen7h5rs>
-      <ul data-astro-cid-nen7h5rs>
-        <li data-astro-cid-nen7h5rs>
-              <a href="/site-alexinfantini/" class="header__link" data-astro-cid-nen7h5rs>
-                Home
-              </a>
-            </li><li data-astro-cid-nen7h5rs>
-              <a href="/site-alexinfantini/chi-sono" class="header__link" data-astro-cid-nen7h5rs>
-                Chi sono
-              </a>
-            </li><li data-astro-cid-nen7h5rs>
-              <a href="/site-alexinfantini/progetti" class="header__link header__link--active" aria-current="page" data-astro-cid-nen7h5rs>
-                Progetti
-              </a>
-            </li><li data-astro-cid-nen7h5rs>
-              <a href="/site-alexinfantini/contatti" class="header__link" data-astro-cid-nen7h5rs>
-                Contatti
+    <!-- <nav class="header__nav" aria-label="Navigazione principale">
+      <ul>
+        {navLinks.map(({ label, href }) => {
+          // Normalizza per gestire trailing slash nel matching
+          const isActive = currentPath === href || (href !== base && currentPath.startsWith(href));
+          return (
+            <li>
+              <a
+                href={href}
+                class:list={['header__link', { 'header__link--active': isActive }]}
+                aria-current={isActive ? 'page' : undefined}
+              >
+                {label}
               </a>
             </li>
+          );
+        })}
       </ul>
-    </nav>
+    </nav> -->
   </div>
 </header>
 
@@ -112,14 +115,14 @@
     <footer class="footer" data-astro-cid-jo6i4kqk>
   <div class="footer__inner container" data-astro-cid-jo6i4kqk>
     <p class="footer__copy" data-astro-cid-jo6i4kqk>
-      &copy; 2026 <strong data-astro-cid-jo6i4kqk>Il Mio Sito</strong>. Tutti i diritti riservati.
+      &copy; 2026 <strong data-astro-cid-jo6i4kqk>alexinfantini.it</strong>
     </p>
 
-    <nav class="footer__nav" aria-label="Link footer" data-astro-cid-jo6i4kqk>
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer" data-astro-cid-jo6i4kqk>GitHub</a>
-      <a href="/site-alexinfantini/privacy" data-astro-cid-jo6i4kqk>Privacy</a>
-      <a href="/site-alexinfantini/contatti" data-astro-cid-jo6i4kqk>Contatti</a>
-    </nav>
+    <!-- <nav class="footer__nav" aria-label="Link footer">
+      <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href={`${import.meta.env.BASE_URL}privacy`}>Privacy</a>
+      <a href={`${import.meta.env.BASE_URL}contatti`}>Contatti</a>
+    </nav> -->
   </div>
 </footer>
 
