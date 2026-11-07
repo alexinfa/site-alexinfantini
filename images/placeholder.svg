@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450">
+  <rect width="100%" height="100%" fill="#34495e"/>
+  <circle cx="400" cy="180" r="50" fill="#2ecc71" opacity="0.8"/>
+  <text x="400" y="290" font-family="system-ui, sans-serif" font-size="28" font-weight="bold" fill="#ecf0f1" text-anchor="middle">Static Image Placeholder</text>
+  <text x="400" y="325" font-family="system-ui, sans-serif" font-size="16" fill="#bdc3c7" text-anchor="middle">public/images/</text>
+</svg>
